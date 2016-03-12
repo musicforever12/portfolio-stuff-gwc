@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    background: url("http://image.shutterstock.com/z/stock-vector-space-robots-monsters-alien-colorful-background-vector-illustration-148399130.jpg");
+    background-size: 1px 1000px;
+}
+
+h2 {
+    text-align: center; 
+    color: brown; 
+}
+
+p {
+    width: 600px; 
+    text-align: center;
+}
+
+icon {
+    size: 60px 80px;
+}
+
+#navbar {
+    text-align: center;
+}
+
+#navbar li {
+    display: inline-block;
+    border: 2px solid black; 
+    padding: 5px;
+    transition:.5s ease-in-out;
+}
+
+#navbar li:hover {
+    transform: rotate(360deg);
+}
+
+#navbar a {
+    color: brown; 
+    
+}
+
+p {
+    width: 1300px;
+}
+
+.container {
+    text-align: center;
+}
+
+code {
+
+    font-family: monospace;
+    background-color: white;
+    border: 5px solid black;
+}

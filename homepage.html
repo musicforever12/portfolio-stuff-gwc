@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="png" href="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsO5aN79PQsfgSgkyqRm4GoBdgJrqF-THyNYcI81OEPjKCnb0l">
+        <title> Meet Teela_Marlena </title>
+        <link rel="stylesheet" type="text/css" href="homepage.css">
+        <link rel="stylesheet" type="text/css" href="skeleton.css">
+        
+        
+    </head>
+    <body>
+        <h1> Meet Teela_Marlena </h1>
+        <ul id="navbar">
+            <li class="button"><a href="http://52.53.211.7:9000/"> The game!</a></li>
+            <li class="button"><a href="http://vindinium.org/"> The Actual Game!</a></li>
+            <li class="button"><a href="code.html"> More Code! </a></li>
+        </ul> 
+        <p> Now you are probably thinking, "Wow, how conceited are you?" Well, the answer is not really. Teela_Marlena is an artificial intelligene. What's an artificial intelligence? You are about to find out my friend. 
+        And artificial intelligence is exactly that, an intelligence that is simply artificial, it's pretty self explanitory. An artificial intelligence is something that is programmed to be intellgent. Now you're thinking, "Computers in general are intelligent!" But really they aren't. Computers are a fine example of artificial intelligence.
+        Computers are simply programmed to show us different things whenever we search things up. They are programmed to adapt depending on the search. That is an artificial intelligence. We as humans learn to eventually adapt to our surroundings, and change. Computers are programmed to adapt to certain inputs and searches. This is kind of what 
+        Teela_Marlena is. She is a warrior bot. Don't worry, a warrior bot isn't anything too complicated. Just a complicated compilation of a whole bunch of words, commands, tags, if/else statements and so on. Like computers, Teela_Marlena is programmed to adapt to her surroundings... in a game. And here's the catch, this bot isn't controlled by anything. It has a mind of it's own... literally!
+        Teela_Marlena is programmed to do certain things instantly, like a reflex. Like, if Teela_Marlena discovers that there is a gold mine that is not hers, she  will go and take that gold mine. If there is an enemy bot that is near her, she is programmed to attack that enemy bot. Like a reflex, it's something Teela_Marlena does naturally. Nobody needs to control her, they just let the program run, and let Teela_Marlena do the rest!</p>
+        <code><pre>
+        if(bot.yourBot.life > 90){
+             task = "allMines"; 
+         } else if(bot.yourBot.life < 50) {
+             task = "tavern";
+         } else if(bot.yourBot.life > 50 && bot.enemyBots.life > 50) {
+             task = "attack";
+         } else {
+            task = "allMines"; 
+         }
+         </pre></code>
+         
+         <p> What is this you may ask. Many of you do have advanced computer skills, so I'm going to try to make this as short as possible. This set of if/else if/ else statements, control what the bot does at certains times depending on the bot's health, and the enemies health. As you can see, in the condition of the if statement, I have it set to "bot.yourBot.life", which bases the if statement based on your bot's life. The "task" part of the if statements,
+         tell's the bot what task it needs to perform.</p>
+         
+         <code><pre>
+             if(task === "tavern") {
+             var closestTavern = bot.taverns[0]; 
+             for(i = 0; i < bot.taverns.length; i++){
+                 if(bot.findDistance(myPos, closestTavern) > bot.findDistance(myPos, bot.taverns[i])) {
+                     closestTavern = bot.taverns[i]; 
+                 }
+             }
+             console.log("Going to a Tavern!!!"); 
+             myDir = bot.findPath(myPos, closestTavern); 
+         }
+         </pre></code>
+         <p> More code! Don't worry, though it may look complicated, again it really isn't. it's just a matter of thinking logically... that and the ability to break all of this down. First things first, the the condition of the "task === tavern", this piece of code is tracking whether or not the task of the bot is ever tavern. Then, it tells the bot, 'Okay Teela_Marlena, go to the closest tavern to your general location', which is why the variable 'myDir', and the '.findPath' is useful in the scenario.</p>
+        
+    </body>
+</html>
